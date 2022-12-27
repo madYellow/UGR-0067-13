@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="184.254mm"
+   height="138.64911mm"
+   viewBox="0 0 184.25399 138.64911"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.72515432"
+     inkscape:cx="-103.42626"
+     inkscape:cy="459.90211"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="187.5463"
+       y="228.91679"
+       width="411.44647"
+       height="312.16217"
+       id="rect1318" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-15.53305,-55.710913)">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.53536385,0,0,0.69392687,-90.749222,-68.427823)"
+       id="text1316"
+       style="font-size:85.3333px;line-height:1;letter-spacing:0px;white-space:pre;shape-inside:url(#rect1318);shape-padding:10.7262;display:inline;fill:#ff0000"><tspan
+         x="198.27344"
+         y="307.38421"
+         id="tspan3074"><tspan
+           style="fill:#550000"
+           id="tspan3068">Y</tspan><tspan
+           style="font-family:'Mongolian Baiti';-inkscape-font-specification:'Mongolian Baiti'"
+           id="tspan3070">           </tspan><tspan
+           style="fill:#aa8800"
+           id="tspan3072">A</tspan></tspan></text>
+    <rect
+       style="fill:#000000;stroke-width:0.598772"
+       id="rect1803"
+       width="91.106903"
+       height="89.943611"
+       x="-94.555977"
+       y="128.1123"
+       transform="matrix(0.91197747,-0.41024028,0.9057486,0.42381537,0,0)" />
+    <ellipse
+       style="fill:#f2f2f2;stroke-width:0.625427"
+       id="path1857"
+       cx="111.14739"
+       cy="91.328362"
+       rx="7.2213497"
+       ry="2.2694201" />
+    <path
+       style="fill:#1a1a1a;stroke-width:0.625427"
+       d="m 57.525034,110.54278 c 54.390596,26.02271 54.390596,26.02271 54.390596,26.02271 l 53.16142,-24.81234 -0.92187,53.55831 -107.859315,-1.21034 z"
+       id="path3012" />
+    <ellipse
+       style="fill:#1a1a1a;stroke-width:0.690979"
+       id="path3014"
+       cx="110.53279"
+       cy="164.25238"
+       rx="53.929653"
+       ry="30.107641" />
+    <rect
+       style="fill:#ececec;stroke-width:0.170505"
+       id="rect3796"
+       width="3.2592795"
+       height="50.253372"
+       x="163.8092"
+       y="38.339485"
+       transform="matrix(0.88155187,0.47208718,-0.93886392,0.34428847,0,0)" />
+  </g>
+</svg>
