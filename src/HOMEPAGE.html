@@ -2,19 +2,21 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/homepageStyle.css">
         <title>Home</title>
     </head>
     <body>
         <header>
-            <div class="top-name-logo">
-                <img width="200" height="200" src="./images/logo.svg" alt="School logo">
-                <div id="schoolName">Youthful Academy</div>
+            <div class="name-and-logo">
+                <img class="name-and-logo__logo"width="200" height="200" src="./images/logo.svg" alt="School logo">
+                <div class="name-and-logo__name">Youthful Academy</div>
             </div>
-            <nav>
-                <a class="nav-button" href="./HOMEPAGE.html">Home</a>
-                <a class="nav-button" href="./CONTACTS.html">Contact</a>
-                <a class="nav-button" href="./ABOUT.html">About</a>
-                <a class="nav-button" href="./HOMEPAGE.html#address">Address</a>
+            <nav class="main-nav">
+                <a class="main-nav__button" href="./HOMEPAGE.html">Home</a>
+                <a class="main-nav__button" href="./CONTACTS.html">Contact</a>
+                <a class="main-nav__button" href="./ABOUT.html">About</a>
+                <a class="main-nav__button" href="#address">Address</a>
             </nav>
             <blockquote>
                 Intelligence plus character — that is the goal of true education.
@@ -22,55 +24,59 @@
             </blockquote>
         </header>
         <main>
-            <div class="loginLink">
-                <img width="250" height="250" src="./images/login.jpg" alt="anonymous photo">
-                <div>ALREADY A<br> MEMBER? CLICK <a href="./LOGIN.html">LOGIN</a></div>
+            <div class="login-link">
+                <img class="login-link__image" width="250" height="auto" src="./images/login.jpg" alt="anonymous photo">
+                <div class="login-link__sentence">ALREADY A<br> MEMBER? CLICK <a href="./LOGIN.html">LOGIN</a></div>
             </div>
-            <div>
-                <img width="250" height="250" src="./images/students.jpg" alt="primary school students picture">
-                <div class="sch-description">Our school strives for the multi dimensional excellence of its students</div>
-            </div>
-            <div>
-                <img width="250" height="250" src="./images/School.jpg" alt="school building picture">
-                <div class="sch-description">We ensure the students in our school are<br>
-                    kept in the best environment possible to nurture their growth.
+            <div class="descriptions">
+                <div class="descriptions__school-description">
+                    <img class="descriptions__school-description__image" width="250" height="auto" src="./images/students.jpg" alt="primary school students picture">
+                    <div class="descriptions__school-description__statement">Our school strives for the multi dimensional excellence of its students</div>
                 </div>
-            </div>
-            <div>
-                <img width="250" height="250" src="./images/teacher.jpg" alt="Teacher and students picture">
-                <div class="sch-description">Teachers and other members of the community are <br>
-                    chosen carefully to ensure quality
+                <div class="descriptions__school-description">
+                    <img class="descriptions__school-description__image" width="250" height="autp" src="./images/School.jpg" alt="school building picture">
+                    <div class="descriptions__school-description__statement">We ensure the students in our school are<br>
+                        kept in the best environment possible to nurture their growth.
+                    </div>
+                </div>
+                <div class="descriptions__school-description">
+                    <img class="descriptions__school-description__image" width="250" height="auto" src="./images/teacher.jpg" alt="Teacher and students picture">
+                    <div class="descriptions__school-description__statement">Teachers and other members of the community are <br>
+                        chosen carefully to ensure quality
+                    </div>
                 </div>
             </div>
         </main>
         <hr>
-        <span>Addresses</span>
-        <div id="address">
-            <address>Mexico, Addis Ababa, Ethiopia</address>
-            <address>Sebeta, Oromia, Ethiopia<address>
-        </div>
         <footer>
-            <div class="logo-image"></div>
-            <div class="footerList">
+            <div class="footer-logo"><img class="footer-logo__image" src="./images/logo.svg" alt="school logo"></div>
+            <div class="footer-list" id="address">
+                Addresses
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item"><address>Mexico, Addis Ababa, Ethiopia</address></li>
+                    <li class="footer-list__list__item"><address>Sebeta, Oromia, Ethiopia<address></address></li>
+                </ul>
+            </div>
+            <div class="footer-list">
                 Social Media
-                <ul>
-                    <li><a>Twitter</a></li>
-                    <li><a>Facebook</a></li>
-                    <li><a>Telegram</a></li>
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item"><a href="https://www.twitter.com">Twitter</a></li>
+                    <li class="footer-list__list__item"><a href="https://www.facebook.com">Facebook</a></li>
+                    <li class="footer-list__list__item"><a href="https://www.telegram.com">Telegram</a></li>
                 </ul>
             </div>
-            <div class="footerList">
+            <div class="footer-list">
                 Email
-                <ul>
-                    <li>youthschool@gmail.com</li>
-                    <li>youthschool@yahoo.com</li>
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item">youthschool@gmail.com</li>
+                    <li class="footer-list__list__item">youthschool@yahoo.com</li>
                 </ul>
             </div>
-            <div class="footerList">
+            <div class="footer-list">
                 Phone No.
-                <ul>
-                    <li>+251 911 121 314</li>
-                    <li>+251 913 131 211</li>
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item">+251 911 121 314</li>
+                    <li class="footer-list__list__item">+251 913 131 211</li>
                 </ul>
             </div>
         </footer>

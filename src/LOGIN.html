@@ -2,68 +2,81 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Home</title>     
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/loginStyle.css">
+        <title>LOGIN</title>
     </head>
     <body>
         <header>
-            <div class="top-name-logo">
-                <img width="200" height="200" src="./images/logo.svg" alt="School logo">
-                <div id="schoolName">Youthful Academy</div>
+            <div class="name-and-logo">
+                <img class="name-and-logo__logo"width="200" height="200" src="./images/logo.svg" alt="School logo">
+                <div class="name-and-logo__name">Youthful Academy</div>
             </div>
-            <nav>
-                <a class="nav-button" href="./HOMEPAGE.html">Home</a>
-                <a class="nav-button" href="./CONTACTS.html">Contact</a>
-                <a class="nav-button" href="./ABOUT.html">About</a>
-                <a class="nav-button" href="./HOMEPAGE.html#address">Address</a>
+            <nav class="main-nav">
+                <a class="main-nav__button" href="./HOMEPAGE.html">Home</a>
+                <a class="main-nav__button" href="./CONTACTS.html">Contact</a>
+                <a class="main-nav__button" href="./ABOUT.html">About</a>
+                <a class="main-nav__button" href="#address">Address</a>
             </nav>
         </header>
-        <h1>LOGIN</h1>
-        <form id="student-login" action="./STUDENT.html">
-            <div>STUDENT</div>
-            <div class="main-form">
-                <label for="id">ID</label>
-                <input type="text" placeholder="Enter your ID here" id="id">
-                <br>
-                <label for="password">PASSWORD</label>
-                <input type="password" placeholder="Enter your password" id="password">
-            </div>
-             <button id="student-button">LOGIN</button>
-        </form>
-        <form id="parent-login">
-            <div>PARENT</div>
-            <div class="main-form">
-                <label for="p-id">Child's ID</label>
-                <input type="text" placeholder="Enter child's ID here" id="p-id">
-                <br>
-                <label for="p-password">PASSWORD</label>
-                <input type="password" placeholder="Enter your password" id="p-password">
-            </div>
-            <button id="parent-button">LOGIN</button>
-        </form>
+        <main>
+            <h1>LOGIN</h1>
+            <form class="student-login">
+                <div class="student-login__title">STUDENT</div>
+                <div class="student-login__fields">
+                    <label for="id">ID</label>
+                    <input type="text" placeholder="Enter your ID here" id="id">
+                    <br>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" placeholder="Enter your password" id="password">
+                </div>
+                <button type="button" id="student-button">LOGIN</button>
+                <div class="response"></div>
+            </form>
+            <form class="parent-login">
+                <div class="parent-login__title">PARENT</div>
+                <div class="parent-login__fields">
+                    <label for="p-id">Child's ID</label>
+                    <input type="text" placeholder="Enter child's ID here" id="p-id">
+                    <br>
+                    <label for="p-password">PASSWORD</label>
+                    <input type="password" placeholder="Enter your password" id="p-password">
+                </div>
+                <button id="parent-button">LOGIN</button>
+            </form>
+        </main>
         <footer>
-            <div class="logo-image"></div>
-            <div class="footerList">
+            <div class="footer-logo"><img class="footer-logo__image" src="./images/logo.svg" alt="school logo"></div>
+            <div class="footer-list" id="address">
+                Addresses
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item"><address>Mexico, Addis Ababa, Ethiopia</address></li>
+                    <li class="footer-list__list__item"><address>Sebeta, Oromia, Ethiopia<address></address></li>
+                </ul>
+            </div>
+            <div class="footer-list">
                 Social Media
-                <ul>
-                    <li><a>Twitter</a></li>
-                    <li><a>Facebook</a></li>
-                    <li><a>Telegram</a></li>
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item"><a href="https://www.twitter.com">Twitter</a></li>
+                    <li class="footer-list__list__item"><a href="https://www.facebook.com">Facebook</a></li>
+                    <li class="footer-list__list__item"><a href="https://www.telegram.com">Telegram</a></li>
                 </ul>
             </div>
-            <div class="footerList">
+            <div class="footer-list">
                 Email
-                <ul>
-                    <li>youthschool@gmail.com</li>
-                    <li>youthschool@yahoo.com</li>
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item">youthschool@gmail.com</li>
+                    <li class="footer-list__list__item">youthschool@yahoo.com</li>
                 </ul>
             </div>
-            <div class="footerList">
+            <div class="footer-list">
                 Phone No.
-                <ul>
-                    <li>+251 911 121 314</li>
-                    <li>+251 913 131 211</li>
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item">+251 911 121 314</li>
+                    <li class="footer-list__list__item">+251 913 131 211</li>
                 </ul>
             </div>
         </footer>
     </body>
+    <script src="../script/loginScript.js"></script>
 </html>

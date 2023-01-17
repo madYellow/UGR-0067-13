@@ -1,0 +1,440 @@
+@media screen{
+    body{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:grey;
+    }
+    h1{
+        color:black;
+        font-weight:bolder;
+        text-align:center;
+        
+    }
+    h2{
+        color:black;
+        font-weight:bold;
+        text-align:center;
+    }
+    main{
+        display:flex;
+        flex-flow:row nowrap;
+        padding-top:1em;
+    }
+    .student-info__general{
+        display:flex;
+        flex-flow:column nowrap;
+        color:black;
+        width:15em;
+        padding:2em;
+        margin-bottom:2em;
+        border:3px solid blueviolet;
+    }
+    .student-info__general div{
+        margin:1em;
+    }
+    .student-info__general img{
+        width:10em;
+        height:10em;
+        background-color:white;
+        margin:10%;
+        border-radius:50%;
+        align-self:center;
+    }
+    .student-info__profile{
+        display:flex;
+        flex-flow:column nowrap;
+        width:100%;
+        margin-bottom:1em;
+        border:3px solid blueviolet;
+    }
+    .student-info__profile__bar{
+        display:flex;
+        flex-flow:column nowrap;
+        width:100%;
+        align-items:center;
+        margin-bottom:1em;
+    }
+    .student-info__profile img{
+        width:10em;
+        height:10em;
+        background-color:transparent;
+        border-radius:25%;
+    }
+    .student-info__profile__logo-image{
+        align-self: center;
+        margin-bottom:1em;
+        filter:invert();
+    }
+    .student-info__profile__bar__link{
+        display:inline-block;
+        text-decoration:none;
+        text-align:center;
+        height:2.35em;
+        width:80%;
+        color:white;
+        display:inline-block;
+        margin:0.5em;
+        padding:0.5em;
+        background-color:rgb(45, 45, 201);
+        border-radius: 2% 0;
+    }
+    .main__{
+        display:flex;
+        flex-flow:column;
+        justify-content:space-around;
+        margin:3em;
+        width:90%;
+    }
+    table{
+        font-size:0.8em;
+        margin-bottom:1em;
+        width:100%;
+    }
+    td,th{
+        padding:1%;
+        text-align: center;
+    }
+    td{
+        background-color: silver;
+        color:black;
+    }
+    td.time{
+        background-color: skyblue;
+        color:black;
+    }
+    th{
+        color:white;
+        background-color: rgb(99, 99, 210);
+        font-size:1.3em;
+    }
+    .name-and-logo{
+        display: flex;
+        flex-direction:row wrap;
+        background-color: midnightblue;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .name-and-logo__logo{
+        background-color:transparent;
+        margin:0.7em;
+        border-radius:25%;
+    }
+    .main-nav{
+        padding-top:0.5em;
+        display: flex;
+        justify-content:center;
+        text-align:start;
+    }
+    .main-nav__button{
+        padding:1em;
+        text-decoration: none;
+        width:3.5em;
+        margin-left:2em;
+        size:2em;
+        background-color: rgb(45, 45, 201);
+        color:white;
+        
+    }
+    
+    footer{
+        display:flex;
+        justify-content: space-around;
+        flex-flow:row wrap;
+        background-color:midnightblue;
+        padding:2em;
+        align-items:flex-start;
+    }
+    .footer-logo{
+        background-color:midnightblue;
+        border-radius:25%;
+        width:9em;
+        height:9em;
+    }
+    .footer-logo__image{
+        background-color: transparent;
+        max-width:100%;
+    }
+    .footer-list{
+        display:flex;
+        flex-flow:column wrap;
+        text-align:center;
+        color:white;
+        font-size:1em;
+        font-weight:bold;
+    }
+    .footer-list__list{
+        list-style:none;  
+    }
+    .footer-list__list__item{
+        margin-top:1em;
+        font-size:0.85em;
+        font-weight:normal;
+    }
+    .footer-list__list__item a{
+        text-decoration:none;
+        color:white;
+    }
+}
+@media screen and (min-width:320px) and (max-width:479px){
+    .name-and-logo{
+        height:10em;
+    }
+    .name-and-logo__logo{
+        margin:0.3em;
+        border-radius:25%;
+        max-width:9em;
+        max-height:9em;
+    }
+    .name-and-logo__name{
+        color:white;
+        text-transform: uppercase;
+        letter-spacing:0.75em;
+        line-height:3em;
+        font-size:1.2em;
+    } 
+    .main-nav{
+        padding-top:0.5em;
+        display: flex;
+    }
+    .main-nav__button{
+        padding:1em;
+        text-decoration: none;
+        width:3.5em;
+        margin:0.2em;
+        size:2em;
+        color:white;
+    }
+    .table1 .time{
+        display:none;
+    }
+    main{
+        display:flex;
+        flex-flow:column nowrap;
+        align-items:center;
+    }
+    .student-info__general{
+        min-width:15em;
+    }
+    .student-info__profile{
+        min-width:17em;
+    }
+    footer{
+        display:flex;
+        flex-flow:column nowrap;
+        align-items:center;
+        padding-top:1em;
+    }
+    .footer-logo{
+        border-radius:25%;
+        width:8em;
+        height:8em;
+        vertical-align:middle;
+    }
+    .footer-logo__image{
+        max-width:100%;
+    }
+    .footer-list{
+        display:flex;
+        flex-flow:column nowrap;
+        align-items:center;
+        text-align:center;
+        color:white;
+        font-size:1em;
+        margin:0.5em;
+    }
+    .footer-list__list{
+        list-style:none; 
+        padding:0.2em;
+    }
+    .footer-list__list__item, .footer-list__item__item address{
+        margin-top:1em;
+        font-size:0.85em;
+    }
+}
+@media screen and (min-width:480px) and (max-width:599px){
+    .name-and-logo{
+        height:10em;
+    }
+    .name-and-logo__logo{
+        margin:0.3em;
+        border-radius:25%;
+        max-width:9em;
+        max-height:9em;
+    }
+    .name-and-logo__name{
+        color:white;
+        text-transform: uppercase;
+        letter-spacing:0.75em;
+        line-height:3em;
+        font-size:1.3em;
+    }
+    .table1 .time{
+        display:none;
+    }
+    main{
+        display:flex;
+        flex-flow:column nowrap;
+        align-items:center;
+    }
+    .student-info__general{
+        min-width:20em;
+    }
+    .student-info__profile{
+        min-width:22em;
+    }
+    footer{
+        display:grid;
+        grid-template-columns:[col1]1fr [col2]1fr;
+        grid-template-rows:[row1]9em [row2]1fr [row3]1fr;
+        align-items:center;
+        padding-top:1em;
+    }
+    .footer-logo{
+        background-color:midnightblue;
+        grid-row-start:row1;
+        grid-row-end:row2;
+        grid-column-start:1;
+        grid-column-end:3;
+        border-radius:25%;
+        vertical-align:middle;
+    }
+    .footer-logo__image{
+        background-color: transparent;
+        max-width:100%;
+    }
+    .footer-list{
+        display:flex;
+        flex-flow:column nowrap;
+        align-items:center;
+        text-align:center;
+        color:white;
+        font-size:1em;
+        margin:0.5em;
+    }
+    .footer-list__list{
+        list-style:none; 
+        padding:0.2em;
+    }
+    .footer-list__list__item, .footer-list__item__item address{
+        margin-top:1em;
+        font-size:0.85em;
+    }
+}
+@media screen and (min-width:600px) and (max-width:767px){
+    .name-and-logo__name{
+        color:white;
+        text-transform: uppercase;
+        letter-spacing:1em;
+        line-height:3em;
+        font-size:1.76em;
+    }
+    .table1 .time{
+        display:none;
+    }
+    main{
+        display:flex;
+        flex-flow:column nowrap;
+        align-items:center;
+    }
+    .student-info__general{
+        min-width:20em;
+    }
+    .student-info__profile{
+        min-width:22em;
+    }
+    footer{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        padding-top:1em;
+    }
+    .footer-logo{
+        grid-row-start:1;
+        grid-row-end:3;
+        grid-column-start:1;
+        grid-column-end:2;
+        border-radius:25%;
+        vertical-align:middle;
+    }
+    .footer-logo__image{
+        max-width:100%;
+    }
+    .footer-list{
+        display:flex;
+        flex-flow:column nowrap;
+        align-items:center;
+        text-align:center;
+        color:white;
+        font-size:1em;
+        margin:0.5em;
+    }
+    .footer-list__list{
+        list-style:none; 
+        padding:0.2em;
+    }
+    .footer-list__list__item, .footer-list__item__item address{
+        margin-top:1em;
+        font-size:0.85em;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .name-and-logo__name{
+        color:white;
+        text-transform: uppercase;
+        letter-spacing:1em;
+        line-height:3em;
+        font-size:2em;
+    }
+    th{
+       overflow:hidden; 
+    }
+    footer{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        padding-top:1em;
+    }
+    .footer-logo{
+        grid-row-start:1;
+        grid-row-end:3;
+        grid-column-start:1;
+        grid-column-end:2;
+        border-radius:25%;
+    }
+    .footer-logo__image{
+        max-width:100%;
+    }
+    .footer-list{
+        display:flex;
+        flex-flow:column nowrap;
+        align-items:center;
+        text-align:center;
+        color:white;
+        font-size:1em;
+        margin:0.5em;
+    }
+    .footer-list__list{
+        list-style:none; 
+        padding:0.2em;
+    }
+    .footer-list__list__item, .footer-list__item__item address{
+        margin-top:1em;
+        font-size:0.85em;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    .name-and-logo__name{
+        text-transform: uppercase;
+        color:white;
+        letter-spacing:1em;
+        line-height:3em;
+        font-size:2em;
+    }
+}
+@media screen and (min-width:1200px){
+    .name-and-logo__name{
+        text-transform: uppercase;
+        color:white;
+        letter-spacing:1em;
+        font-size:2em;
+    }
+}

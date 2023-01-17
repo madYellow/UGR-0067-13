@@ -2,97 +2,122 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/studentStyle.css">
         <title>Student</title>
     </head>
     <body>
         <header>
-            <div class="top-name-logo">
-                <img width="200" height="200" src="./images/logo.svg" alt="School logo">
-                <div id="schoolName">Youthful Academy</div>
+            <div class="name-and-logo">
+                <img class="name-and-logo__logo"width="200" height="200" src="./images/logo.svg" alt="School logo">
+                <div class="name-and-logo__name">Youthful Academy</div>
             </div>
-            <nav>
-                <a class="nav-button" href="./HOMEPAGE.html">Home</a>
-                <a class="nav-button" href="./CONTACTS.html">Contact</a>
-                <a class="nav-button" href="./ABOUT.html">About</a>
-                <a class="nav-button" href="./HOMEPAGE.html#address">Address</a>
+            <nav class="main-nav">
+                <a class="main-nav__button" href="./HOMEPAGE.html">Home</a>
+                <a class="main-nav__button" href="./CONTACTS.html">Contact</a>
+                <a class="main-nav__button" href="./ABOUT.html">About</a>
+                <a class="main-nav__button" href="#address">Address</a>
             </nav>
         </header>
-        <div class="left">
-            <div class="profile">
-                <img src="" alt="student photo">
-                <hr>
-                <div>Name:<span id="student-name"></span></div>
-                <div>ID: <span id="student-ID"></span></div>
-                <div>Grade: <span id="student-grade"></span></div>
+        <main>
+            <div class="studnet-info">
+                <div class="student-info__general">
+                    <img width="100" height="100" src="./images/student profile.png" alt="student photo">
+                    <hr>
+                    <div>Name:</div>
+                    <div>ID:</div>
+                    <div>Grade:</div>
+                </div>
+                <div class="student-info__profile">
+                    <nav class="student-info__profile__bar">
+                        <a class="student-info__profile__bar__link" href="./STUDENT.html">Student Home</a>
+                        <a class="student-info__profile__bar__link" href="./GRADES.html">Grades</a>
+                        <a class="student-info__profile__bar__link" href="./SUPPLEMENTARY.html">Supplementary Materials</a>
+                        <a class="student-info__profile__bar__link" href="./SCHEDULE.html">Schedule</a>
+                    </nav>
+                    <div class="student-info__profile__logo-image"></div>
+                </div>
             </div>
-            <div class="studentInfo">
-                <nav class="nav-2">
-                    <a class="student-nav" href="./STUDENT.html">Student Home</a>
-                    <a class="student-nav" href="./GRADES.html">Grades</a>
-                    <a class="student-nav" href="./SUPPLEMENTARY.html">Supplementary Materials</a>
-                    <a class="student-nav" href="./SCHEDULE.html">Schedule</a>
-                </nav>
-                <div class="logo-image-2"></div>
+            <div class="main__">
+                <h1>HOMEWORKS</h1>
+                <div class="homework">
+                    <div class="homework__top">
+                        <div class="homework__subject">
+                            English
+                        </div>
+                        <div class="homework__due-date">
+                            date:
+                        </div>
+                    </div>
+                    <div class="homework__description">
+                        Write an essay from the topics listed on page 12. You are required to choose and write only one .
+                    </div>
+                </div>
+                <div class="homework">
+                    <div class="homework__top">
+                        <div class="homework__subject">
+                            Maths
+                        </div>
+                        <div class="homework__due-date">
+                            date:
+                        </div>
+                    </div>
+                    <div class="homework__description">
+                        Do the exercise on page 25 and 26.
+                    </div>
+                </div>
+                <div class="homework">
+                    <div class="homework__top">
+                        <div class="homework__subject">
+                            Civics
+                        </div>
+                        <div class="homework__due-date">
+                            date:
+                        </div>
+                    </div>
+                    <div class="homework__description">
+                        Answer the questions listed before tomorrow's topic, the one on page 36.
+                    </div>
+                </div>
+                <div class="reading-links">
+                    LINKS TO READING MATERIALS
+                    <ul class="reading-links__list">
+                        <li class="reading-links__list__link"><a href="https://en.wikipedia.org/wiki/Atomic_theory">Atomic theory</a></li>
+                        <li class="reading-links__list__link"><a href="https://www.cuemath.com/algebra/solve-matrices/">Matrices in maths</a></li>
+                        <li class="reading-links__list__link"><a href="https://www.physicsclassroom.com/class/newtlaws/Lesson-1/Newton-s-First-Law">Newton's laws of motion</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <h1>HOMEWORKS</h1>
-        <div class="homework">
-            <div class="subject">
-                English
-                <span class="due-date">date</span>
-            </div>
-            <div class="hw-description">
-                Write an essay from the topics listed on page 12. You are required to choose and write only one .
-            </div>
-        </div>
-        <div class="homework">
-            <div class="subject">
-                Maths
-                <span class="due-date">date</span>
-            </div>
-            <div class="hw-description">
-                Do the exercise on page 25 and 26.
-            </div>
-        </div>
-        <div class="homework">
-            <div class="subject">
-                Civics
-                <span class="due-date">date</span>
-            </div>
-            <div class="hw-description">
-                Answer the questions listed before tomorrow's topic, the one on page 36.
-            </div>
-        </div>
-        <div class="bottom-links">
-            LINKS TO READING MATERIALS
-            <ul>
-                <li><a href="https://en.wikipedia.org/wiki/Atomic_theory">Atomic theory</a></li>
-                <li><a href="https://www.cuemath.com/algebra/solve-matrices/">Matrices in maths</a></li>
-                <li><a href="https://www.physicsclassroom.com/class/newtlaws/Lesson-1/Newton-s-First-Law">Newton's laws of motion</a></li>
-            </ul>
-        </div>
+        </main>
         <footer>
-            <div class="logo-image"></div>
-            <div class="footerList">
+            <div class="footer-logo"><img class="footer-logo__image" src="./images/logo.svg" alt="school logo"></div>
+            <div class="footer-list" id="address">
+                Addresses
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item"><address>Mexico, Addis Ababa, Ethiopia</address></li>
+                    <li class="footer-list__list__item"><address>Sebeta, Oromia, Ethiopia<address></address></li>
+                </ul>
+            </div>
+            <div class="footer-list">
                 Social Media
-                <ul>
-                    <li><a>Twitter</a></li>
-                    <li><a>Facebook</a></li>
-                    <li><a>Telegram</a></li>
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item"><a href="https://www.twitter.com">Twitter</a></li>
+                    <li class="footer-list__list__item"><a href="https://www.facebook.com">Facebook</a></li>
+                    <li class="footer-list__list__item"><a href="https://www.telegram.com">Telegram</a></li>
                 </ul>
             </div>
-            <div class="footerList">
+            <div class="footer-list">
                 Email
-                <ul>
-                    <li>youthschool@gmail.com</li>
-                    <li>youthschool@yahoo.com</li>
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item">youthschool@gmail.com</li>
+                    <li class="footer-list__list__item">youthschool@yahoo.com</li>
                 </ul>
             </div>
-            <div class="footerList">
+            <div class="footer-list">
                 Phone No.
-                <ul>
-                    <li>+251 911 121 314</li>
-                    <li>+251 913 131 211</li>
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item">+251 911 121 314</li>
+                    <li class="footer-list__list__item">+251 913 131 211</li>
                 </ul>
             </div>
         </footer>

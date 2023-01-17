@@ -2,44 +2,48 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Class Schedule</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/scheduleStyle.css">
+        <title>Schedule</title>
     </head>
     <body>
         <header>
-            <div class="top-name-logo">
-                <img width="200" height="200" src="./images/logo.svg" alt="School logo">
-                <div id="schoolName">Youthful Academy</div>
+            <div class="name-and-logo">
+                <img class="name-and-logo__logo"width="200" height="200" src="./images/logo.svg" alt="School logo">
+                <div class="name-and-logo__name">Youthful Academy</div>
             </div>
-            <nav>
-                <a class="nav-button" href="./HOMEPAGE.html">Home</a>
-                <a class="nav-button" href="./CONTACTS.html">Contact</a>
-                <a class="nav-button" href="./ABOUT.html">About</a>
-                <a class="nav-button" href="./HOMEPAGE.html#address">Address</a>
+            <nav class="main-nav">
+                <a class="main-nav__button" href="./HOMEPAGE.html">Home</a>
+                <a class="main-nav__button" href="./CONTACTS.html">Contact</a>
+                <a class="main-nav__button" href="./ABOUT.html">About</a>
+                <a class="main-nav__button" href="#address">Address</a>
             </nav>
         </header>
-        <div class="left">
-            <div class="profile">
-                <img width="100" height="100"  src="./images/student profile.png" alt="student photo">
+        <main>
+        <div class="studnet-info">
+            <div class="student-info__general">
+                <img width="100" height="100" src="./images/student profile.png" alt="student photo">
                 <hr>
                 <div>Name:</div>
                 <div>ID:</div>
                 <div>Grade:</div>
             </div>
-            <div class="studentInfo">
-                <nav class="nav-2">
-                    <a class="student-nav" href="./STUDENT.html">Student Home</a>
-                    <a class="student-nav" href="./GRADES.html">Grades</a>
-                    <a class="student-nav" href="./SUPPLEMENTARY.html">Supplementary Materials</a>
-                    <a class="student-nav" href="./SCHEDULE.html">Schedule</a>
+            <div class="student-info__profile">
+                <nav class="student-info__profile__bar">
+                    <a class="student-info__profile__bar__link" href="./STUDENT.html">Student Home</a>
+                    <a class="student-info__profile__bar__link" href="./GRADES.html">Grades</a>
+                    <a class="student-info__profile__bar__link" href="./SUPPLEMENTARY.html">Supplementary Materials</a>
+                    <a class="student-info__profile__bar__link" href="./SCHEDULE.html">Schedule</a>
                 </nav>
-                <div class="logo-image-2"></div>
+                <div class="student-info__profile__logo-image"><img src="./images/logo.svg" alt="school logo"></div>
             </div>
         </div>
+        <div class="main__">
         <h1>SCHEDULE</h1>
         <h2>REGULAR</h2>
-        <table>
+        <table class="table1">
             <tr>
-                <th>TIME</th>
+                <th class="time">TIME</th>
                 <th>MON</th>
                 <th>TUE</th>
                 <th>WED</th>
@@ -47,7 +51,7 @@
                 <th>FRI</th>
             </tr>
             <tr>
-                <td>9:00-9:45</td>
+                <td class="time">9:00-9:45</td>
                 <td class="subject">English</td>
                 <td class="subject">Maths</td>
                 <td class="subject">PE</td>
@@ -55,7 +59,7 @@
                 <td class="subject">Maths</td>
             </tr>
             <tr>
-                <td>9:45-10:30</td>
+                <td class="time">9:45-10:30</td>
                 <td class="subject">Maths</td>
                 <td class="subject">Civics</td>
                 <td class="subject">Physics</td>
@@ -63,7 +67,7 @@
                 <td class="subject">Physics</td>
             </tr>
             <tr>
-                <td>10:30-11:15</td>
+                <td class="time">10:30-11:15</td>
                 <td class="subject">Chemistry</td>
                 <td class="subject">Physics</td>
                 <td class="subject">HIstory</td>
@@ -71,11 +75,11 @@
                 <td class="subject">English</td>
             </tr>
             <tr>
-                <td>11:15-11:40</td>
+                <td class="time">11:15-11:40</td>
                 <td colspan="5">BREAK</td>
             </tr>
             <tr>
-                <td>11:40-12:25</td>
+                <td class="time">11:40-12:25</td>
                 <td class="subject">History</td>
                 <td class="subject">English</td>
                 <td class="subject">Geography</td>
@@ -83,7 +87,7 @@
                 <td class="subject">Civics</td>
             </tr>
             <tr>
-                <td>12:25-1:00</td>
+                <td class="time">12:25-1:00</td>
                 <td class="subject">Physics</td>
                 <td class="subject">Chemistry</td>
                 <td class="subject">Amharic</td>
@@ -91,11 +95,11 @@
                 <td class="subject">Biology</td>
             </tr>
             <tr>
-                <td>1:00-2:00</td>
+                <td class="time">1:00-2:00</td>
                 <td colspan="5">LUNCH</td>
             </tr>
             <tr>
-                <td>2:00-2:45</td>
+                <td class="time">2:00-2:45</td>
                 <td class="subject">Amharic</td>
                 <td class="subject">History</td>
                 <td class="subject">Maths</td>
@@ -103,7 +107,7 @@
                 <td class="subject">Chemistry</td>
             </tr>
             <tr>
-                <td>2:45-3:30</td>
+                <td class="time">2:45-3:30</td>
                 <td class="subject">Biology</td>
                 <td class="subject">Amharic</td>
                 <td class="subject">Biology</td>
@@ -112,51 +116,60 @@
             </tr>
         </table>
         <hr>
-        <h2>TUTORIAL</h2><hr>
+        <h2 class="table2">TUTORIAL</h2>
         <table>
             <tr>
                 <th>TIME</th>
                 <th>SATURDAY</th>
             </tr>
             <tr>
-                <td>9:00-9:45</td>
+                <td class="time">9:00-9:45</td>
                 <td class="subject">Physics</td>
             </tr>
             <tr>
-                <td>9:45-10:30</td>
+                <td class="time">9:45-10:30</td>
                 <td class="subject">English</td>
             </tr>
             <tr>
-                <td>10:30-11:15</td>
+                <td class="time">10:30-11:15</td>
                 <td class="subject">Maths</td>
             </tr>
             <tr>
-                <td>11:15-12:00</td>
+                <td class="time">11:15-12:00</td>
                 <td class="subject">Biology</td>
             </tr>
         </table>
+    </div>
+    </main>
         <footer>
-            <div class="logo-image"></div>
-            <div class="footerList">
+            <div class="footer-logo"><img class="footer-logo__image" src="./images/logo.svg" alt="school logo"></div>
+            <div class="footer-list" id="address">
+                Addresses
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item"><address>Mexico, Addis Ababa, Ethiopia</address></li>
+                    <li class="footer-list__list__item"><address>Sebeta, Oromia, Ethiopia<address></address></li>
+                </ul>
+            </div>
+            <div class="footer-list">
                 Social Media
-                <ul>
-                    <li><a>Twitter</a></li>
-                    <li><a>Facebook</a></li>
-                    <li><a>Telegram</a></li>
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item"><a href="https://www.twitter.com">Twitter</a></li>
+                    <li class="footer-list__list__item"><a href="https://www.facebook.com">Facebook</a></li>
+                    <li class="footer-list__list__item"><a href="https://www.telegram.com">Telegram</a></li>
                 </ul>
             </div>
-            <div class="footerList">
+            <div class="footer-list">
                 Email
-                <ul>
-                    <li>youthschool@gmail.com</li>
-                    <li>youthschool@yahoo.com</li>
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item">youthschool@gmail.com</li>
+                    <li class="footer-list__list__item">youthschool@yahoo.com</li>
                 </ul>
             </div>
-            <div class="footerList">
+            <div class="footer-list">
                 Phone No.
-                <ul>
-                    <li>+251 911 121 314</li>
-                    <li>+251 913 131 211</li>
+                <ul class="footer-list__list">
+                    <li class="footer-list__list__item">+251 911 121 314</li>
+                    <li class="footer-list__list__item">+251 913 131 211</li>
                 </ul>
             </div>
         </footer>
