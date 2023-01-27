@@ -2,122 +2,146 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Supplementary Materials</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css'>
+        <title>Supplementary</title>
     </head>
     <body>
-        <header>
-            <div class="top-name-logo">
-                <img width="200" height="200" src="./images/logo.svg" alt="School logo">
-                <div id="schoolName">Youthful Academy</div>
+        <header class="container-fluid">
+            <div width="250" height='250' class="name-and-logo row bg-primary" >
+                <img width="100" height="100" class="name-and-logo__logo col-3 float-start my-4"src="./images/logo.svg" alt="School logo">
+                <div class="name-and-logo__name col-9 align-self-center display-3 text-center text-white  fw-bolder">YOUTHFUL ACADEMY</div>
             </div>
-            <nav class="nav-2">
-                <a class="nav-button" href="./HOMEPAGE.html">Home</a>
-                <a class="nav-button" href="./CONTACTS.html">Contact</a>
-                <a class="nav-button" href="./ABOUT.html">About</a>
-                <a class="nav-button" href="./HOMEPAGE.html#address">Address</a>
+            <nav class="main-nav navbar justify-content-around fs-3 mx=0 bg-secondary">
+                <a class="main-nav__button w-10 text-decoration-none text-white" href="./HOMEPAGE.html">Home</a>
+                <a class="main-nav__button w-10 text-decoration-none text-white" href="./CONTACTS.html">Contact</a>
+                <a class="main-nav__button w-10 text-decoration-none text-white" href="./ABOUT.html">About</a>
+                <a class="main-nav__button w-10 text-decoration-none text-white" href="#address">Address</a>
             </nav>
         </header>
-        <div class="left">
-            <div class="profile">
-                <img src="" alt="student photo">
-                <hr>
-                <div>Name:</div>
-                <div>ID:</div>
-                <div>Grade:</div>
+        <main>
+            <div class="studnet-info">
+                <div class="student-info__general">
+                    <img width="100" height="100" src="./images/student profile.png" alt="student photo">
+                    <hr>
+                    <div>Name:</div>
+                    <div>ID:</div>
+                    <div>Grade:</div>
+                </div>
+                <div class="student-info__profile">
+                    <nav class="student-info__profile__bar">
+                        <a class="student-info__profile__bar__link" href="./STUDENT.html">Student Home</a>
+                        <a class="student-info__profile__bar__link" href="./GRADES.html">Grades</a>
+                        <a class="student-info__profile__bar__link" href="./SUPPLEMENTARY.html">Supplementary Materials</a>
+                        <a class="student-info__profile__bar__link" href="./SCHEDULE.html">Schedule</a>
+                    </nav>
+                    <div class="student-info__profile__logo-image"><img src="./images/logo.svg" alt="school logo"></div>
+                </div>
             </div>
-            <div class="studentInfo">
-                <nav>
-                    <a class="student-nav" href="./STUDENT.html">Student Home</a>
-                    <a class="student-nav" href="./GRADES.html">Grades</a>
-                    <a class="student-nav" href="./SUPPLEMENTARY.html">Supplementary Materials</a>
-                    <a class="student-nav" href="./SCHEDULE.html">Schedule</a>
-                </nav>
-                <div class="logo-image-2"></div>
+            <div class="main__">
+                <div class="search">
+                    <h1 class="topText">Supplementary Materials</h1>
+                    <label for="topic">Search topic</label>
+                    <input id="topic" type='text' placeholder='write search topic'><button id="search__button">Search</button>
+                    <div class="search__options">
+                        <span class="material-type">Recommended</span>
+                        <form class="search__options__format">
+                            <div class="search__options__format__item">
+                                <label for="all">All</label>                            
+                                <input type="checkbox" id="all" name="all">
+                             </div>
+                             <div class="search__options__format__item">
+                                <label for="videos">Videos</label>
+                                <input type="checkbox" id="videos" name="videos">
+                            </div>
+                            <div class="search__options__format__item">
+                                <label for="audio">Audio</label>
+                                <input type="checkbox" id="audio" name="audio">
+                            </div>
+                            <div class="search__options__format__item">
+                                <label for="text">Text</label>
+                                <input type="checkbox" id="text" name="text">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="results">
+                    <div class="results__result">
+                        <div class="result-type">
+                            <div class="subject">Biology</div>
+                            <div class="format">Video</div>
+                        </div>
+                        <div class="content">
+                            <video width="320" height="200" controls>
+                                <track src="./videos/10 Second Countdown With Voice.en.vtt" kind="subtitles" srlang="en" >
+                                <source src="./videos/10 Second Countdown With Voice.mp4" type="video/mp4">
+                                <source src="" type="video/ogg">
+                                Browser doesn't support video
+                            </video>
+                            <div class="content__description">The basic ideas of genetics are explained in this video.</div>
+                        </div>
+                    </div>
+                    <div class="results__result">
+                        <div class="result-type">
+                            <div class="subject">Chemistry</div>
+                            <div class="format">Audio</div>
+                        </div>
+                        <div class="content">
+                            <audio controls>
+                                <track src="./audios/10 Second Countdown With Voice.en.vtt" kind="captions" srlang="en" >
+                                <source src="./audios/10 Second Countdown With Voice.mp3" type="audio/ogg">
+                                Browser doesn't support audio
+                            </audio>
+                            <div class="content__description">History and development of the theory of atom is explained</div>
+                        </div>
+                    </div>
+                    <div class="results__result">
+                        <div class="result-type">
+                            <div class="subject">Maths</div>
+                            <div class="format">Text</div>
+                        </div>
+                        <div class="content">
+                            <a href="./files/equations.pdf" target="_blank"><img width="50" height="50" src="./images/pdf-logo.jpg" alt="Linear equations pdf link"></a>
+                            <div class="content-description"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip-block">Tip of the day: <span class="tip"></span></div>
             </div>
-        </div>
-        <div class="search">
-            <h1 class="topText">Supplementary Materials</h1>
-            <input id="topic" type='text' placeholder='write search topic'><button class="search">Search</button>
-            <label for="topic">Search topic</label>
-            <div>
-                <span class="materialType">Recommended</span>
-                <form class="search-format">
-                    <label for="all">All</label>
-                    <li><input type="checkbox" id="all" name="all"></li>
-                    <label for="videos">Videos</label>
-                    <li><input type="checkbox" id="videos" name="videos"></li>
-                    <label for="audio">Audio</label>
-                    <li><input type="checkbox" id="audio" name="audio"></li>
-                    <label for="text">Text</label>
-                    <li><input type="checkbox" id="text" name="text"></li>
-                </form>
-        </div>
-        <div class="results">
-            <div class="result">
-                <div class="result-type">
-                    <div class="subject">Biology</div>
-                    <div class="format">Video</div>
-                </div>
-                <div class="content">
-                    <video width="320" height="200" controls>
-                        <track src="./videos/10 Second Countdown With Voice.en.vtt" kind="subtitles" srlang="en" >
-                        <source src="./videos/10 Second Countdown With Voice.mp4" type="video/mp4">
-                        <source src="" type="video/ogg">
-                        Browser doesn't support video
-                    </video>
-                </div>
-                <div class="content-description">The basic ideas of genetics are explained in this video.</div>
+        </main>
+        <footer class="container-fluid row bg-primary text-white p-4">
+            <div class="footer-logo col d-none d-md-inline "><img class="footer-logo__image" width="100" height='100' src="./images/logo.svg" alt="school logo"></div>
+            <div class="footer-list col fs-4" id="address">
+                Addresses
+                <ul class="footer-list__list fs-6 my-3">
+                    <li class="footer-list__list__item"><address>Mexico, Addis Ababa, Ethiopia</address></li>
+                    <li class="footer-list__list__item"><address>Sebeta, Oromia, Ethiopia<address></address></li>
+                </ul>
             </div>
-            <div class="result">
-                <div class="result-type">
-                    <div class="subject">Chemistry</div>
-                    <div class="format">Audio</div>
-                </div>
-                <div class="content">
-                    <audio controls>
-                        <track src="./audios/10 Second Countdown With Voice.en.vtt" kind="captions" srlang="en" >
-                        <source src="./audios/10 Second Countdown With Voice.mp3" type="audio/ogg">
-                        Browser doesn't support audio
-                    </audio>
-                </div>
-                <div class="content-description">History and development of the theory of atom is explained</div>
-            </div>
-            <div class="result">
-                <div class="result-type">
-                    <div class="subject">Maths</div>
-                    <div class="format">Text</div>
-                </div>
-                <div class="content">
-                    <a href="./files/equations.pdf" target="_blank"><img width="50" height="50" src="./images/pdf-logo.jpg" alt="Linear equations pdf link"></a>
-                </div>
-                <div class="content-description"></div>
-            </div>
-        </div>
-        <div class="tip-block">Tip of the day: <span class="tip"></span></div>
-        <footer>
-            <div class="logo-image"></div>
-            <div class="footerList">
+            <div class="footer-list col fs-4">
                 Social Media
-                <ul>
-                    <li><a>Twitter</a></li>
-                    <li><a>Facebook</a></li>
-                    <li><a>Telegram</a></li>
+                <ul class="footer-list__list col fs-6 my-3">
+                    <li class="footer-list__list__item"><a class="text-decoration-none text-white" href="https://www.twitter.com">Twitter</a></li>
+                    <li class="footer-list__list__item"><a class="text-decoration-none text-white" href="https://www.facebook.com">Facebook</a></li>
+                    <li class="footer-list__list__item"><a class="text-decoration-none text-white" href="https://www.telegram.com">Telegram</a></li>
                 </ul>
             </div>
-            <div class="footerList">
+            <div class="footer-list col fs-4">
                 Email
-                <ul>
-                    <li>youthschool@gmail.com</li>
-                    <li>youthschool@yahoo.com</li>
+                <ul class="footer-list__list fs-6 my-3">
+                    <li class="footer-list__list__item">youthschool@gmail.com</li>
+                    <li class="footer-list__list__item">youthschool@yahoo.com</li>
                 </ul>
             </div>
-            <div class="footerList">
+            <div class="footer-list col fs-4">
                 Phone No.
-                <ul>
-                    <li>+251 911 121 314</li>
-                    <li>+251 913 131 211</li>
+                <ul class="footer-list__list fs-6 my-3">
+                    <li class="footer-list__list__item">+251 911 121 314</li>
+                    <li class="footer-list__list__item">+251 913 131 211</li>
                 </ul>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../script/supplemantaryScript.js"></script>
     </body>
 </html>

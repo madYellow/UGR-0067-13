@@ -26,7 +26,7 @@
      showgrid="false"
      inkscape:zoom="0.72515432"
      inkscape:cx="-103.42626"
-     inkscape:cy="459.90211"
+     inkscape:cy="461.28112"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -51,18 +51,14 @@
        xml:space="preserve"
        transform="matrix(0.53536385,0,0,0.69392687,-90.749222,-68.427823)"
        id="text1316"
-       style="font-size:85.3333px;line-height:1;letter-spacing:0px;white-space:pre;shape-inside:url(#rect1318);shape-padding:10.7262;display:inline;fill:#ff0000"><tspan
+       style="font-size:85.3333px;line-height:1;letter-spacing:0px;white-space:pre;shape-inside:url(#rect1318);shape-padding:10.7262;display:inline;fill:#fdfdff;fill-opacity:1"><tspan
          x="198.27344"
          y="307.38421"
-         id="tspan3074"><tspan
-           style="fill:#550000"
-           id="tspan3068">Y</tspan><tspan
-           style="font-family:'Mongolian Baiti';-inkscape-font-specification:'Mongolian Baiti'"
-           id="tspan3070">           </tspan><tspan
-           style="fill:#aa8800"
-           id="tspan3072">A</tspan></tspan></text>
+         id="tspan1614">Y<tspan
+   style="font-family:'Mongolian Baiti';-inkscape-font-specification:'Mongolian Baiti'"
+   id="tspan1612">           </tspan>A</tspan></text>
     <rect
-       style="fill:#000000;stroke-width:0.598772"
+       style="fill:#ffffff;stroke-width:0.598772;fill-opacity:1"
        id="rect1803"
        width="91.106903"
        height="89.943611"
@@ -77,11 +73,11 @@
        rx="7.2213497"
        ry="2.2694201" />
     <path
-       style="fill:#1a1a1a;stroke-width:0.625427"
+       style="fill:#ffffff;stroke-width:0.625427;fill-opacity:1"
        d="m 57.525034,110.54278 c 54.390596,26.02271 54.390596,26.02271 54.390596,26.02271 l 53.16142,-24.81234 -0.92187,53.55831 -107.859315,-1.21034 z"
        id="path3012" />
     <ellipse
-       style="fill:#1a1a1a;stroke-width:0.690979"
+       style="fill:#ffffff;stroke-width:0.690979;fill-opacity:1"
        id="path3014"
        cx="110.53279"
        cy="164.25238"
